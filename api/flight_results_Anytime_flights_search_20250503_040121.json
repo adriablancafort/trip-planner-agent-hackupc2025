@@ -1,0 +1,914 @@
+{
+  "status": "RESULT_STATUS_COMPLETE",
+  "content": {
+    "results": {
+      "quotes": {
+        "{bl}:202504301159*D*BCN*JFK*20251210*edes*IB": {
+          "minPrice": {
+            "amount": "302",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 12,
+              "day": 10,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746014340",
+            "marketingCarrierId": "-32222"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505010746*D*BCN*JFK*20260303*iber*IB": {
+          "minPrice": {
+            "amount": "241",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2026,
+              "month": 3,
+              "day": 3,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746085560",
+            "marketingCarrierId": "-32222"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505011520*D*BCN*JFK*20251110*iber*IB": {
+          "minPrice": {
+            "amount": "245",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 11,
+              "day": 10,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746112800",
+            "marketingCarrierId": "-32222"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505012015*I*BCN*JFK*20251209*gtes*W4": {
+          "minPrice": {
+            "amount": "251",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": false,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 12,
+              "day": 9,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746130500",
+            "marketingCarrierId": "-30596"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505021145*I*BCN*JFK*20250611*gtes*VY": {
+          "minPrice": {
+            "amount": "206",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": false,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 6,
+              "day": 11,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746186300",
+            "marketingCarrierId": "-31685"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505021205*D*BCN*JFK*20251001*leve*LL": {
+          "minPrice": {
+            "amount": "249",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 10,
+              "day": 1,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746187500",
+            "marketingCarrierId": "-31071"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505021329*D*BCN*JFK*20250709*leve*LL": {
+          "minPrice": {
+            "amount": "339",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 7,
+              "day": 9,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746192540",
+            "marketingCarrierId": "-31071"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505021338*D*BCN*JFK*20250827*leve*LL": {
+          "minPrice": {
+            "amount": "249",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 8,
+              "day": 27,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746193080",
+            "marketingCarrierId": "-31071"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505021515*I*BCN*JFK*20250701*jaty*JU": {
+          "minPrice": {
+            "amount": "314",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": false,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 7,
+              "day": 1,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746198900",
+            "marketingCarrierId": "-32181"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505021522*D*BCN*JFK*20250903*leve*LL": {
+          "minPrice": {
+            "amount": "249",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 9,
+              "day": 3,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746199320",
+            "marketingCarrierId": "-31071"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505021812*D*BCN*JFK*20260118*iber*IB": {
+          "minPrice": {
+            "amount": "245",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2026,
+              "month": 1,
+              "day": 18,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746209520",
+            "marketingCarrierId": "-32222"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505021938*I*BCN*JFK*20250513*ctes*W4": {
+          "minPrice": {
+            "amount": "187",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": false,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 5,
+              "day": 13,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746214680",
+            "marketingCarrierId": "-30596"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505022048*D*BCN*JFK*20260201*iber*IB": {
+          "minPrice": {
+            "amount": "245",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2026,
+              "month": 2,
+              "day": 1,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746218880",
+            "marketingCarrierId": "-32222"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505022117*I*BCN*JFK*20260417*mtes*TP": {
+          "minPrice": {
+            "amount": "267",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": false,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2026,
+              "month": 4,
+              "day": 17,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746220620",
+            "marketingCarrierId": "-31781"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505022319*D*BCN*JFK*20250603*leve*LL": {
+          "minPrice": {
+            "amount": "249",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 6,
+              "day": 3,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746227940",
+            "marketingCarrierId": "-31071"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505022354*D*BCN*JFK*20250506*leve*LL": {
+          "minPrice": {
+            "amount": "199",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 5,
+              "day": 6,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746230040",
+            "marketingCarrierId": "-31071"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505030128*I*BCN*JFK*20251115*gtes*VY": {
+          "minPrice": {
+            "amount": "230",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": false,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 11,
+              "day": 15,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746235680",
+            "marketingCarrierId": "-31685"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        }
+      },
+      "carriers": {
+        "-30596": {
+          "name": "Wizz Air Malta",
+          "imageUrl": "https://logos.skyscnr.com/images/airlines/W4.png",
+          "iata": "W4",
+          "icao": "WMT",
+          "displayCode": "W4"
+        },
+        "-31071": {
+          "name": "LEVEL",
+          "imageUrl": "https://logos.skyscnr.com/images/airlines/LL.png",
+          "iata": "LL",
+          "icao": "",
+          "displayCode": "LL"
+        },
+        "-31685": {
+          "name": "Vueling Airlines",
+          "imageUrl": "https://logos.skyscnr.com/images/airlines/VY.png",
+          "iata": "VY",
+          "icao": "VLG",
+          "displayCode": "VY"
+        },
+        "-31781": {
+          "name": "TAP",
+          "imageUrl": "https://logos.skyscnr.com/images/airlines/TP.png",
+          "iata": "TP",
+          "icao": "TAP",
+          "displayCode": "TP"
+        },
+        "-32181": {
+          "name": "Air Serbia",
+          "imageUrl": "https://logos.skyscnr.com/images/airlines/JU.png",
+          "iata": "JU",
+          "icao": "ASL",
+          "displayCode": "JU"
+        },
+        "-32222": {
+          "name": "Iberia",
+          "imageUrl": "https://logos.skyscnr.com/images/airlines/IB.png",
+          "iata": "IB",
+          "icao": "IBE",
+          "displayCode": "IB"
+        }
+      },
+      "places": {
+        "205351567": {
+          "entityId": "205351567",
+          "parentId": "",
+          "name": "Am\u00e9rica del Norte",
+          "type": "PLACE_TYPE_CONTINENT",
+          "iata": "",
+          "coordinates": {
+            "latitude": 56.4203028702821,
+            "longitude": -92.41051848992336
+          }
+        },
+        "27537542": {
+          "entityId": "27537542",
+          "parentId": "29475437",
+          "name": "Nueva York",
+          "type": "PLACE_TYPE_CITY",
+          "iata": "NYC",
+          "coordinates": {
+            "latitude": 40.6940959901,
+            "longitude": -73.9282670243
+          }
+        },
+        "27548283": {
+          "entityId": "27548283",
+          "parentId": "29475369",
+          "name": "Barcelona",
+          "type": "PLACE_TYPE_CITY",
+          "iata": "BCN",
+          "coordinates": {
+            "latitude": 41.399854893476636,
+            "longitude": 2.150979275475258
+          }
+        },
+        "27563221": {
+          "entityId": "27563221",
+          "parentId": "",
+          "name": "Europa",
+          "type": "PLACE_TYPE_CONTINENT",
+          "iata": "",
+          "coordinates": {
+            "latitude": 55.280210962380146,
+            "longitude": 29.382113552883705
+          }
+        },
+        "29475369": {
+          "entityId": "29475369",
+          "parentId": "27563221",
+          "name": "Espa\u00f1a",
+          "type": "PLACE_TYPE_COUNTRY",
+          "iata": "",
+          "coordinates": {
+            "latitude": 40.20529473045569,
+            "longitude": -3.6590579043568927
+          }
+        },
+        "29475437": {
+          "entityId": "29475437",
+          "parentId": "205351567",
+          "name": "Estados Unidos",
+          "type": "PLACE_TYPE_COUNTRY",
+          "iata": "",
+          "coordinates": {
+            "latitude": 45.7566336986,
+            "longitude": -112.6892486287
+          }
+        },
+        "95565058": {
+          "entityId": "95565058",
+          "parentId": "27537542",
+          "name": "Nueva York John F Kennedy",
+          "type": "PLACE_TYPE_AIRPORT",
+          "iata": "JFK",
+          "coordinates": {
+            "latitude": 40.6412215,
+            "longitude": -73.7781176
+          }
+        },
+        "95565085": {
+          "entityId": "95565085",
+          "parentId": "27548283",
+          "name": "Barcelona",
+          "type": "PLACE_TYPE_AIRPORT",
+          "iata": "BCN",
+          "coordinates": {
+            "latitude": 41.2973241,
+            "longitude": 2.0833156
+          }
+        }
+      }
+    },
+    "groupingOptions": {
+      "byRoute": {
+        "quotesGroups": [
+          {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565058",
+            "quoteIds": [
+              "{bl}:202505021938*I*BCN*JFK*20250513*ctes*W4",
+              "{bl}:202505022354*D*BCN*JFK*20250506*leve*LL",
+              "{bl}:202505021145*I*BCN*JFK*20250611*gtes*VY",
+              "{bl}:202505030128*I*BCN*JFK*20251115*gtes*VY",
+              "{bl}:202505010746*D*BCN*JFK*20260303*iber*IB",
+              "{bl}:202505022048*D*BCN*JFK*20260201*iber*IB",
+              "{bl}:202505021812*D*BCN*JFK*20260118*iber*IB",
+              "{bl}:202505011520*D*BCN*JFK*20251110*iber*IB",
+              "{bl}:202505021205*D*BCN*JFK*20251001*leve*LL",
+              "{bl}:202505021522*D*BCN*JFK*20250903*leve*LL",
+              "{bl}:202505022319*D*BCN*JFK*20250603*leve*LL",
+              "{bl}:202505021338*D*BCN*JFK*20250827*leve*LL",
+              "{bl}:202505012015*I*BCN*JFK*20251209*gtes*W4",
+              "{bl}:202505022117*I*BCN*JFK*20260417*mtes*TP",
+              "{bl}:202504301159*D*BCN*JFK*20251210*edes*IB",
+              "{bl}:202505021515*I*BCN*JFK*20250701*jaty*JU",
+              "{bl}:202505021329*D*BCN*JFK*20250709*leve*LL"
+            ]
+          }
+        ]
+      },
+      "byDate": {
+        "quotesInboundGroups": [],
+        "quotesOutboundGroups": [
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 5,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505021938*I*BCN*JFK*20250513*ctes*W4",
+              "{bl}:202505022354*D*BCN*JFK*20250506*leve*LL"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 6,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505021145*I*BCN*JFK*20250611*gtes*VY",
+              "{bl}:202505022319*D*BCN*JFK*20250603*leve*LL"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 7,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505021515*I*BCN*JFK*20250701*jaty*JU",
+              "{bl}:202505021329*D*BCN*JFK*20250709*leve*LL"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 8,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505021338*D*BCN*JFK*20250827*leve*LL"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 9,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505021522*D*BCN*JFK*20250903*leve*LL"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 10,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505021205*D*BCN*JFK*20251001*leve*LL"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 11,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505030128*I*BCN*JFK*20251115*gtes*VY",
+              "{bl}:202505011520*D*BCN*JFK*20251110*iber*IB"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 12,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505012015*I*BCN*JFK*20251209*gtes*W4",
+              "{bl}:202504301159*D*BCN*JFK*20251210*edes*IB"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2026,
+              "month": 1,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505021812*D*BCN*JFK*20260118*iber*IB"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2026,
+              "month": 2,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505022048*D*BCN*JFK*20260201*iber*IB"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2026,
+              "month": 3,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505010746*D*BCN*JFK*20260303*iber*IB"
+            ]
+          },
+          {
+            "monthYearDate": {
+              "year": 2026,
+              "month": 4,
+              "day": 0
+            },
+            "quoteIds": [
+              "{bl}:202505022117*I*BCN*JFK*20260417*mtes*TP"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

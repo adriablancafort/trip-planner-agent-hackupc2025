@@ -1,0 +1,172 @@
+{
+  "status": "RESULT_STATUS_COMPLETE",
+  "content": {
+    "results": {
+      "quotes": {
+        "{bl}:202505022339*D*BCN*CDG*20250710*vuel*VY|202505022152*D*CDG*BCN*20250717*vuel*VY": {
+          "minPrice": {
+            "amount": "99",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565041",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 7,
+              "day": 10,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746229140",
+            "marketingCarrierId": "-31685"
+          },
+          "inboundLeg": {
+            "originPlaceId": "95565041",
+            "destinationPlaceId": "95565085",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 7,
+              "day": 17,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746222720",
+            "marketingCarrierId": "-31685"
+          }
+        }
+      },
+      "carriers": {
+        "-31685": {
+          "name": "Vueling Airlines",
+          "imageUrl": "https://logos.skyscnr.com/images/airlines/VY.png",
+          "iata": "VY",
+          "icao": "VLG",
+          "displayCode": "VY"
+        }
+      },
+      "places": {
+        "27539733": {
+          "entityId": "27539733",
+          "parentId": "29475385",
+          "name": "Par\u00eds",
+          "type": "PLACE_TYPE_CITY",
+          "iata": "PAR",
+          "coordinates": {
+            "latitude": 48.85662237511698,
+            "longitude": 2.3428759930239886
+          }
+        },
+        "27548283": {
+          "entityId": "27548283",
+          "parentId": "29475369",
+          "name": "Barcelona",
+          "type": "PLACE_TYPE_CITY",
+          "iata": "BCN",
+          "coordinates": {
+            "latitude": 41.399854893476636,
+            "longitude": 2.150979275475258
+          }
+        },
+        "27563221": {
+          "entityId": "27563221",
+          "parentId": "",
+          "name": "Europa",
+          "type": "PLACE_TYPE_CONTINENT",
+          "iata": "",
+          "coordinates": {
+            "latitude": 55.280210962380146,
+            "longitude": 29.382113552883705
+          }
+        },
+        "29475369": {
+          "entityId": "29475369",
+          "parentId": "27563221",
+          "name": "Espa\u00f1a",
+          "type": "PLACE_TYPE_COUNTRY",
+          "iata": "",
+          "coordinates": {
+            "latitude": 40.20529473045569,
+            "longitude": -3.6590579043568927
+          }
+        },
+        "29475385": {
+          "entityId": "29475385",
+          "parentId": "27563221",
+          "name": "Francia",
+          "type": "PLACE_TYPE_COUNTRY",
+          "iata": "",
+          "coordinates": {
+            "latitude": 46.5525478148,
+            "longitude": 2.5256872161
+          }
+        },
+        "95565041": {
+          "entityId": "95565041",
+          "parentId": "27539733",
+          "name": "Par\u00eds Charles de Gaulle",
+          "type": "PLACE_TYPE_AIRPORT",
+          "iata": "CDG",
+          "coordinates": {
+            "latitude": 49.0096176,
+            "longitude": 2.5481698
+          }
+        },
+        "95565085": {
+          "entityId": "95565085",
+          "parentId": "27548283",
+          "name": "Barcelona",
+          "type": "PLACE_TYPE_AIRPORT",
+          "iata": "BCN",
+          "coordinates": {
+            "latitude": 41.2973241,
+            "longitude": 2.0833156
+          }
+        }
+      }
+    },
+    "groupingOptions": {
+      "byRoute": {
+        "quotesGroups": [
+          {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565041",
+            "quoteIds": [
+              "{bl}:202505022339*D*BCN*CDG*20250710*vuel*VY|202505022152*D*CDG*BCN*20250717*vuel*VY"
+            ]
+          }
+        ]
+      },
+      "byDate": {
+        "quotesInboundGroups": [
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 7,
+              "day": 17
+            },
+            "quoteIds": [
+              "{bl}:202505022339*D*BCN*CDG*20250710*vuel*VY|202505022152*D*CDG*BCN*20250717*vuel*VY"
+            ]
+          }
+        ],
+        "quotesOutboundGroups": [
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 7,
+              "day": 10
+            },
+            "quoteIds": [
+              "{bl}:202505022339*D*BCN*CDG*20250710*vuel*VY|202505022152*D*CDG*BCN*20250717*vuel*VY"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "status": "RESULT_STATUS_COMPLETE",
+  "content": {
+    "results": {
+      "quotes": {
+        "{bl}:202505022043*D*BCN*LHR*20250615*edes*VY": {
+          "minPrice": {
+            "amount": "228",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": true,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565050",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 6,
+              "day": 15,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746218580",
+            "marketingCarrierId": "-31685"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        },
+        "{bl}:202505030015*I*BCN*LHR*20250615*vuvi*VY": {
+          "minPrice": {
+            "amount": "116",
+            "unit": "PRICE_UNIT_WHOLE",
+            "updateStatus": "PRICE_UPDATE_STATUS_UNSPECIFIED"
+          },
+          "isDirect": false,
+          "outboundLeg": {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565050",
+            "departureDateTime": {
+              "year": 2025,
+              "month": 6,
+              "day": 15,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "1746231300",
+            "marketingCarrierId": "-31685"
+          },
+          "inboundLeg": {
+            "originPlaceId": "",
+            "destinationPlaceId": "",
+            "departureDateTime": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "quoteCreationTimestamp": "0",
+            "marketingCarrierId": ""
+          }
+        }
+      },
+      "carriers": {
+        "-31685": {
+          "name": "Vueling Airlines",
+          "imageUrl": "https://logos.skyscnr.com/images/airlines/VY.png",
+          "iata": "VY",
+          "icao": "VLG",
+          "displayCode": "VY"
+        }
+      },
+      "places": {
+        "27544008": {
+          "entityId": "27544008",
+          "parentId": "29475375",
+          "name": "Londres",
+          "type": "PLACE_TYPE_CITY",
+          "iata": "LON",
+          "coordinates": {
+            "latitude": 51.5041174139,
+            "longitude": -0.0943465343
+          }
+        },
+        "27548283": {
+          "entityId": "27548283",
+          "parentId": "29475369",
+          "name": "Barcelona",
+          "type": "PLACE_TYPE_CITY",
+          "iata": "BCN",
+          "coordinates": {
+            "latitude": 41.399854893476636,
+            "longitude": 2.150979275475258
+          }
+        },
+        "27563221": {
+          "entityId": "27563221",
+          "parentId": "",
+          "name": "Europa",
+          "type": "PLACE_TYPE_CONTINENT",
+          "iata": "",
+          "coordinates": {
+            "latitude": 55.280210962380146,
+            "longitude": 29.382113552883705
+          }
+        },
+        "29475369": {
+          "entityId": "29475369",
+          "parentId": "27563221",
+          "name": "Espa\u00f1a",
+          "type": "PLACE_TYPE_COUNTRY",
+          "iata": "",
+          "coordinates": {
+            "latitude": 40.20529473045569,
+            "longitude": -3.6590579043568927
+          }
+        },
+        "29475375": {
+          "entityId": "29475375",
+          "parentId": "27563221",
+          "name": "Reino Unido",
+          "type": "PLACE_TYPE_COUNTRY",
+          "iata": "",
+          "coordinates": {
+            "latitude": 54.2532367516,
+            "longitude": -2.9767221462
+          }
+        },
+        "95565050": {
+          "entityId": "95565050",
+          "parentId": "27544008",
+          "name": "Londres Heathrow",
+          "type": "PLACE_TYPE_AIRPORT",
+          "iata": "LHR",
+          "coordinates": {
+            "latitude": 51.471389,
+            "longitude": -0.452778
+          }
+        },
+        "95565085": {
+          "entityId": "95565085",
+          "parentId": "27548283",
+          "name": "Barcelona",
+          "type": "PLACE_TYPE_AIRPORT",
+          "iata": "BCN",
+          "coordinates": {
+            "latitude": 41.2973241,
+            "longitude": 2.0833156
+          }
+        }
+      }
+    },
+    "groupingOptions": {
+      "byRoute": {
+        "quotesGroups": [
+          {
+            "originPlaceId": "95565085",
+            "destinationPlaceId": "95565050",
+            "quoteIds": [
+              "{bl}:202505030015*I*BCN*LHR*20250615*vuvi*VY",
+              "{bl}:202505022043*D*BCN*LHR*20250615*edes*VY"
+            ]
+          }
+        ]
+      },
+      "byDate": {
+        "quotesInboundGroups": [],
+        "quotesOutboundGroups": [
+          {
+            "monthYearDate": {
+              "year": 2025,
+              "month": 6,
+              "day": 15
+            },
+            "quoteIds": [
+              "{bl}:202505030015*I*BCN*LHR*20250615*vuvi*VY",
+              "{bl}:202505022043*D*BCN*LHR*20250615*edes*VY"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
