@@ -1,7 +1,4 @@
-pydantic-ai
 python-dotenv
-
-livekit-agents[openai]
+pydantic
+livekit-agents[deepgram,openai,cartesia,silero,turn-detector]
 livekit-plugins-noise-cancellation
-
-streamlit

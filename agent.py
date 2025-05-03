@@ -1,6 +1,4 @@
 from dotenv import load_dotenv
-from typing import Any, Dict
-
 from livekit import agents
 from livekit.agents import AgentSession, Agent, RoomInputOptions, RunContext, function_tool
 from livekit.plugins import (
@@ -12,7 +10,7 @@ from livekit.plugins import (
 )
 from livekit.plugins.turn_detector.multilingual import MultilingualModel
 from skyscanner.flights import search_flights
-from models import FlightSearchParams
+from models import SearchFlightRequest
 
 load_dotenv()
 
@@ -20,12 +18,12 @@ load_dotenv()
 class TripPlannerAgent(Agent):
     def __init__(self) -> None:
         super().__init__(
-            instructions="""You are a helpful voice AI trip planner assistant. 
+            instructions="""
+            You are a helpful voice AI trip planner assistant. 
             Guide users through planning their trips by asking questions about:
-            - Their origin location (airport code)
-            - Their destination (airport code)
+            - Their origin location
+            - Their destination
             - Their travel dates
-            - Their preferred currency
             
             Use the search_flights tool to find flight options for them based on their answers.
             Explain the best flight options you find, including prices and airlines.
@@ -34,34 +32,21 @@ class TripPlannerAgent(Agent):
         )
     
     @function_tool()
-    async def search_flights(
-        self,
-        context: RunContext,
-        origin: str,
-        destination: str,
-        departure_date: str,
-        market: str = "US",
-        locale: str = "en-US",
-        currency: str = "USD"
-    ) -> Dict[str, Any]:
+    async def search_flights(self):
         """
         Search for flights using the Skyscanner API.
         
         Args:
-            origin: The origin airport code (IATA code, e.g., 'JFK')
-            destination: The destination airport code (IATA code, e.g., 'LAX')
-            departure_date: The departure date in YYYY-MM-DD format
-            market: The market country code (default: 'US')
-            locale: The locale for results (default: 'en-US')
-            currency: The currency for prices (default: 'USD')
+            originIata: The origin airport code (IATA code, e.g., 'JFK')
+            destinationIata: The destination airport code (IATA code, e.g., 'LAX')
+            year: The year of travel (e.g., 2025)
+            month: The month of travel (e.g., 8 for August)
         """
-        params = FlightSearchParams(
-            origin='BCN',
-            destination='JFK',
-            departure_date=departure_date,
-            market=market,
-            locale=locale,
-            currency='USD'
+        params = SearchFlightRequest(
+            originIata = "BCN",
+            destinationIata = "JFK",
+            year = 2025,
+            month = 8
         )
         
         return search_flights(params)
