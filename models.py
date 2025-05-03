@@ -1,5 +1,6 @@
 from typing import List, Optional, Dict
 from pydantic import BaseModel, Field
+from dataclasses import dataclass
 
 
 class FlightSearchParams(BaseModel):
@@ -48,3 +49,14 @@ class TripPlan(BaseModel):
     car_hire: Optional[List[Dict]] = None
     recommendations: Optional[List[str]] = None
     estimated_budget: Optional[float] = None
+
+
+@dataclass
+class FlightSearchParams:
+    """Parameters for flight search requests."""
+    origin: str
+    destination: str
+    departure_date: Optional[str] = None
+    market: str = "US"
+    locale: str = "en-US"
+    currency: str = "USD"
