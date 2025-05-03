@@ -29,7 +29,7 @@ if __name__ == "__main__":
     request = TripRequest(
         origin="Barcelona",
         destination="New York",
-        dates="May 2025",
+        dates="June 2025",
         budget=1000,
         preferences="I prefer direct flights and would like some cultural recommendations.",
         travelers=2,

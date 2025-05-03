@@ -3,8 +3,24 @@ import os
 from typing import Dict, Any
 from dotenv import load_dotenv
 from models import CarHireSearchParams
+import pandas as pd
 
 load_dotenv()
+
+
+def get_entity_id(location: str) -> str:
+
+    csv = pd.read_csv("data/iata_airports_and_locations_with_vibes.csv", header=0)
+    id = location
+
+    try:
+        id = csv.loc[csv["IATA"] == location, "id"].values[0]
+    
+    except IndexError:
+        print(f"IATA code {location} not found in CSV file. \
+              Proceeding with default ID.")
+        
+    return id
 
 
 def search_car_hire(params: CarHireSearchParams) -> Dict[str, Any]:
@@ -29,6 +45,9 @@ def search_car_hire(params: CarHireSearchParams) -> Dict[str, Any]:
         "Content-Type": "application/json"
     }
 
+    # Get the entity ID for the location
+    entity_id = get_entity_id(params.location_id)
+
     # Request payload
     payload = {
         "query": {
@@ -46,10 +65,11 @@ def search_car_hire(params: CarHireSearchParams) -> Dict[str, Any]:
                 "day": params.dropoff_day
             },
             "dateTimeGroupingType": "DATE_TIME_GROUPING_TYPE_BY_WEEK",
-            "pickUpDropOffLocationEntityId": params.location_id
+            "pickUpDropOffLocationEntityId": entity_id
         }
     }
 
+    print(payload)
     try:
         # Make the request and process response
         response = requests.post(url, headers=headers, json=payload)

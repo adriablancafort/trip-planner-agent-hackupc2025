@@ -38,7 +38,7 @@ def search_flights(params: FlightSearchParams) -> Dict[str, Any]:
     # Handle date logic
     if params.departure_date:
         date_parts = params.departure_date.split("-")
-        query_leg["date"] = {
+        query_leg["fixedDate"] = {
             "year": int(date_parts[0]),
             "month": int(date_parts[1]),
             "day": int(date_parts[2])
@@ -56,6 +56,7 @@ def search_flights(params: FlightSearchParams) -> Dict[str, Any]:
         }
     }
 
+    print(payload)
     try:
         # Make the request and process response
         response = requests.post(url, headers=headers, json=payload)
