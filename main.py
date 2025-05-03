@@ -25,6 +25,7 @@ def plan_trip(request: TripRequest) -> TripPlan:
 
 
 if __name__ == "__main__":
+    print("starting trip planning process")
     request = TripRequest(
         origin="Barcelona",
         destination="New York",
@@ -37,4 +38,5 @@ if __name__ == "__main__":
     )
     
     trip_plan = plan_trip(request)
+    print("trip plan details:")
     print(json.dumps(trip_plan.model_dump(), indent=2))
