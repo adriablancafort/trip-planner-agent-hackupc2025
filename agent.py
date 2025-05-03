@@ -1,6 +1,6 @@
 from pydantic_ai import Agent, RunContext
 from models import TripRequest, TripPlan, FlightSearchParams
-from skyscanner import search_flights
+from skyscanner.flights import search_flights
 
 trip_planner = Agent(
     'openai:gpt-4o',
