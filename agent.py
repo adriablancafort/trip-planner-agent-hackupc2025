@@ -39,12 +39,13 @@ async def search_flights_tool(ctx: RunContext[TripRequest], params: FlightSearch
     
     return f"Found {len(results['flights'])} flight options:\n\n" + "\n".join(flight_options)
 
+
 @trip_planner.tool
 async def search_car_hire_tool(ctx: RunContext[TripRequest], params: CarHireSearchParams) -> str:
     """Search for car hire options using the Skyscanner API"""
     print(f"search car hire tool called with params: {params}")
     results = search_car_hire(params)
-    
+
     if not results["success"]:
         print("car hire search error:", results["message"])
         return f"Error searching for car hire: {results['message']}"
@@ -62,3 +63,5 @@ async def search_car_hire_tool(ctx: RunContext[TripRequest], params: CarHireSear
     ]
     
     return f"Found {len(results['cars'])} car hire options:\n\n" + "\n".join(car_options)
+
+
