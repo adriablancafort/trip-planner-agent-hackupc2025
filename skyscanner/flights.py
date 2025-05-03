@@ -53,7 +53,9 @@ def search_flights(params: SearchFlightRequest):
         response = requests.post(url, headers=headers, json=payload)
 
         response.raise_for_status()
-        return format_flight_results(response.json())
+        flights = format_flight_results(response.json())
+        print(flights)
+        return flights
 
     except requests.exceptions.HTTPError as e:
         print(f"HTTP Error: {e}")
