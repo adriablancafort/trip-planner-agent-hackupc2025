@@ -16,6 +16,12 @@ def plan_trip(request: TripRequest) -> TripPlan:
         prompt += f" with a budget of ${request.budget}"
     if request.preferences:
         prompt += f". Preferences: {request.preferences}"
+    if request.travelers:
+        prompt += f". Planning for {request.travelers} travelers"
+    if request.need_car:
+        prompt += f". Please include car hire options"
+        if request.car_preferences:
+            prompt += f" with these preferences: {request.car_preferences}"
     
     result = trip_planner.run_sync(prompt, deps=request)
     return result.output
@@ -28,7 +34,9 @@ if __name__ == "__main__":
         dates="May 2025",
         budget=1000,
         preferences="I prefer direct flights and would like some cultural recommendations.",
-        travelers=2
+        travelers=2,
+        need_car=True,
+        car_preferences="Compact or economy car, automatic transmission"
     )
     
     trip_plan = plan_trip(request)
