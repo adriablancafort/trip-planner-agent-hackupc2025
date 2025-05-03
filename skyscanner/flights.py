@@ -72,18 +72,20 @@ def format_flight_results(results):
     """
     Format flight search results for better LLM understanding
     """
-    if not results or "content" not in results or "results" not in results["content"]:
-        return "No flight results available."
     
-    quotes = results["content"]["results"].get("quotes", {})
-    if not quotes:
-        return "No flight quotes available."
+    if results is None:
+        return "No results found."
     
     lines = []
     
     lines.append("## Flight Options")
     lines.append("| Flight ID | Price | Direct | Date |")
     lines.append("|-----------|-------|--------|------|")
+    
+    quotes = results.get("content", {}).get("results", {}).get("quotes", {})
+
+    if not quotes:
+        return "No flight options found for these dates."
     
     for identifier, quote in quotes.items():
         price = quote.get("minPrice", {}).get("amount", "N/A")
