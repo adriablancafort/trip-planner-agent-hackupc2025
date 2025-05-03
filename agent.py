@@ -20,7 +20,7 @@ class TripPlannerAgent(Agent):
         )
     
     @function_tool()
-    async def search_flights(self):
+    async def search_flights(self, originIata: str, destinationIata: str, month: int, day: int):
         """
         Search for flights using the Skyscanner API.
         
@@ -31,10 +31,14 @@ class TripPlannerAgent(Agent):
             month: The month of travel (e.g., 8 for August)
         """
         params = SearchFlightRequest(
-            originIata = "BCN",
-            destinationIata = "JFK",
-            year = 2025,
-            month = 8
+            originIata=originIata,
+            destinationIata=destinationIata,
+            year=2025,
+            month=month,
+            day=day,
+            market = "ES",
+            locale = "es-ES",
+            currency = "EUR"
         )
         
         return search_flights(params)

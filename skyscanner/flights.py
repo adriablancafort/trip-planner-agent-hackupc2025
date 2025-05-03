@@ -9,10 +9,6 @@ def search_flights(params: SearchFlightRequest):
     """
     api_key = os.getenv("SKYSCANNER_API_KEY")
 
-    market = "ES"
-    locale = "es-ES"
-    currency = "EUR"
-
     url = "https://partners.api.skyscanner.net/apiservices/v3/flights/indicative/search"
 
     headers = {
@@ -22,9 +18,9 @@ def search_flights(params: SearchFlightRequest):
 
     payload = {
         "query": {
-            "market": market,
-            "locale": locale,
-            "currency": currency,
+            "market": params.market,
+            "locale": params.locale,
+            "currency": params.currency,
             "queryLegs": [
                 {
                     "originPlace": {
