@@ -1,9 +1,6 @@
-from dotenv import load_dotenv
 from models import TripRequest, TripPlan
 from agent import trip_planner
 import json
-
-load_dotenv()
 
 def plan_trip(request: TripRequest) -> TripPlan:
     """Plan a trip based on the user's request"""
