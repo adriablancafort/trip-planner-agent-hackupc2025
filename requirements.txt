@@ -1,3 +1,7 @@
 pydantic-ai
 python-dotenv
+
+livekit-agents[openai]
+livekit-plugins-noise-cancellation
+
 streamlit
