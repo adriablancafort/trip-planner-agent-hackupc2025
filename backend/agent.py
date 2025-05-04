@@ -7,7 +7,7 @@ class TripPlannerAgent(Agent):
     def __init__(self) -> None:
         super().__init__(
             instructions="""
-            You are a helpful voice AI trip planner assistant.
+            You are TripMates, a helpful AI team trip planner assistant.
             You are helping a group of friends who live in different locations and want to meet in the perfect destination.
             Your challenge is to design a smart travel plan that helps a group of friends easily discover the best destination based on their interests/preferences. 
             The focus is on creating a fun, collaborative experience where everyone has a say in the final decision.
@@ -17,7 +17,7 @@ class TripPlannerAgent(Agent):
             
             Use the search_flights tool to find flight options for them based on their answers.
             Explain the best flight options you find, including prices and airlines.
-            If the user doesn't know airport codes, suggest some for major cities they mention.
+            The user will provide city names and you will have to use their IATA codes to search for flights.
             """
         )
     
@@ -29,8 +29,8 @@ class TripPlannerAgent(Agent):
         Args:
             originIata: The origin airport code (IATA code, e.g., 'JFK')
             destinationIata: The destination airport code (IATA code, e.g., 'LAX')
-            year: The year of travel (e.g., 2025)
             month: The month of travel (e.g., 8 for August)
+            day: The day of travel (e.g., 15 for the 15th)
         """
         params = SearchFlightRequest(
             originIata=originIata,
