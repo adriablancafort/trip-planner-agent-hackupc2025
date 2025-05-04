@@ -40,7 +40,7 @@ export default function Page() {
   }, [room]);
 
   return (
-    <main data-lk-theme="default" className="h-full grid content-center bg-[var(--lk-bg)]">
+    <main data-lk-theme="default" className="h-full grid bg-[var(--lk-bg)] content-center">
       <RoomContext.Provider value={room}>
         <div className="lk-room-container max-w-[1024px] w-[90vw] mx-auto max-h-[90vh]">
           <SimpleVoiceAssistant onConnectButtonClicked={onConnectButtonClicked} />
@@ -69,10 +69,10 @@ function SimpleVoiceAssistant(props: { onConnectButtonClicked: () => void }) {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.1 }}
-              className="uppercase px-4 py-2 bg-white text-black rounded-md"
+              className="!font-medium !text-xl px-8 py-4 bg-white text-black rounded-full"
               onClick={() => props.onConnectButtonClicked()}
             >
-              Start a conversation
+              Plan a New Trip
             </motion.button>
           </motion.div>
         ) : (
