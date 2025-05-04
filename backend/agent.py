@@ -52,7 +52,7 @@ class TripPlannerAgent(Agent):
     @function_tool()
     async def search_hotels(self, location: str, month: int, day: int):
         """
-        Search for hotels using the API.
+        Search for hotels using the Amadeus API.
         
         Args:
             location: The location for hotel search (e.g., 'Barcelona')
@@ -71,7 +71,7 @@ class TripPlannerAgent(Agent):
     @function_tool()
     async def search_events(self, location: str, month: int, day: int):
         """
-        Search for events using the API.
+        Search for events using the Ticketmaster, Meetup, Amadeus APIs.
         
         Args:
             location: The location for event search (e.g., 'Barcelona')
