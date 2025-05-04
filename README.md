@@ -23,9 +23,7 @@ This project was created for the HackUPC 2025 challenge: **"The Perfect Reunion:
 
 ## 🎬 Demo Video
 
-Watch our application in action:
-
-<div style="position: relative; padding-bottom: 64.98194945848375%; height: 0;"><iframe src="https://www.loom.com/embed/3f753365088a45949277f68ff1309cd1?sid=9127a9d7-1d08-4232-a183-25a60dd2c648" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+Watch our application in action: [View Demo Video](https://www.loom.com/share/3f753365088a45949277f68ff1309cd1?sid=57500c0a-eac2-4949-9a12-ec420423315c)
 
 ## 🔧 Tech Stack
 
