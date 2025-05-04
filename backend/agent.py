@@ -55,7 +55,7 @@ class TripPlannerAgent(Agent):
         Search for hotels using the Amadeus API.
         
         Args:
-            locationIata: The city IATA code of the location for hotel search (e.g., 'BCN')
+            locationIata: The city IATA code of the location for hotel search (e.g., 'BCN'). NOT THE AIRPORT IATA!
             adults: The number of adults that will stay in the hotel
             month: The month of travel (e.g., 8 for August)
             day: The day of travel (e.g., 15 for the 15th)

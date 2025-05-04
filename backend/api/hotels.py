@@ -71,15 +71,17 @@ def search_hotels(params: SearchHotelRequest):
     client_id=os.getenv("AMADEUS_API_KEY")
     client_secret=os.getenv("AMADEUS_API_SECRET")
 
-    hotelIds  = get_hotel_list(client_id, client_secret, params.locationIata)
+    hotelIds = get_hotel_list(client_id, client_secret, params.locationIata)[:15]
+
     access_token = get_access_token(client_id, client_secret)
 
+    formated_date = f"{params.year}-{params.month}-{params.day}" if params.month > 9 else f"{params.year}-0{params.month}-{params.day}"
 
     url = 'https://test.api.amadeus.com/v3/shopping/hotel-offers'
     params = {
         'hotelIds': hotelIds,
         'adults': params.adults,
-        'checkInDate': f"{params.year}-{params.month}-{params.day}",
+        'checkInDate': formated_date,
         'bestRateOnly': 'true',
         'currency': 'EUR'
     }
@@ -89,6 +91,7 @@ def search_hotels(params: SearchHotelRequest):
 
     offers_response = requests.get(url, headers=headers, params=params)
     offers_response.raise_for_status()
+
     hotels = format_hotel_results(offers_response.json())
     print(hotels)
     return hotels
