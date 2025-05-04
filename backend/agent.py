@@ -2,7 +2,8 @@ from livekit.agents import Agent, function_tool
 from api.flights import search_flights
 from api.hotels import search_hotels
 from api.events import search_events
-from models import SearchFlightRequest, SearchHotelRequest, SearchEventRequest
+from api.email import send_email
+from models import SearchFlightRequest, SearchHotelRequest, SearchEventRequest, SendEmail
 
 
 class TripPlannerAgent(Agent):
@@ -88,3 +89,21 @@ class TripPlannerAgent(Agent):
         )
         
         return search_events(params)
+
+    @function_tool()
+    async def send_email(self, email: str, title: str, content: str):
+        """
+        Send email.
+        
+        Args:
+            email: The email address to send the information
+            title: The title of the email
+            content: The content of the email
+        """
+        params = SendEmail(
+            email=email,
+            title=title,
+            content=content
+        )
+        
+        return send_email(params)

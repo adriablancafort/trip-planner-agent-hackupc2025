@@ -26,3 +26,8 @@ class SearchEventRequest(BaseModel):
     month: int = Field(..., description="Month of travel")
     day: int = Field(..., description="Day of travel")
 
+class SendEmail(BaseModel):
+    """Parameters for sending email"""
+    email: str = Field(..., description="Email address to send the information")
+    title: str = Field(..., description="Title of the email")
+    content: str = Field(..., description="Content of the email")
