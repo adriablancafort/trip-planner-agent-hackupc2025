@@ -1,20 +1,14 @@
 import os
 import requests
-from dotenv import load_dotenv
-from pydantic import BaseModel, Field
-
-
-class SendEmail(BaseModel):
-    """Parameters for sending email"""
-    email: str = Field(..., description="Email address to send the information")
-    subject: str = Field(..., description="Subject of the email")
-    content: str = Field(..., description="Content of the email")
-
+from models import SendEmail
 
 def send_email(params: SendEmail):
     """
     Send email.
     """
+
+    print("Sending email:", params)
+
     # Set the URL for the SendGrid API
     url = "https://api.sendgrid.com/v3/mail/send"
 
@@ -43,14 +37,6 @@ def send_email(params: SendEmail):
 
     # Send the POST request
     response = requests.post(url, json=data, headers=headers)
+    response.raise_for_status()
     return str(response.status_code)
 
-
-
-if __name__ == "__main__":
-    load_dotenv()
-    send_email(SendEmail(
-        email="pol.de.los.santos@estudiantat.upc.edu",
-        subject="Subject XSD",
-        content="this is a test"
-    ))
