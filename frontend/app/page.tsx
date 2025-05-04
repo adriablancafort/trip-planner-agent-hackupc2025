@@ -1,7 +1,6 @@
 "use client";
 
 import { CloseIcon } from "@/components/CloseIcon";
-import { NoAgentNotification } from "@/components/NoAgentNotification";
 import TranscriptionView from "@/components/TranscriptionView";
 import {
   BarVisualizer,
@@ -93,7 +92,6 @@ function SimpleVoiceAssistant(props: { onConnectButtonClicked: () => void }) {
               <ControlBar onConnectButtonClicked={props.onConnectButtonClicked} />
             </div>
             <RoomAudioRenderer />
-            <NoAgentNotification state={agentState} />
           </motion.div>
         )}
       </AnimatePresence>
