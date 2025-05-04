@@ -56,6 +56,7 @@ This project was created for the HackUPC 2025 challenge: **"The Perfect Reunion:
    OPENAI_API_KEY=<your_openai_key>
    CARTESIA_API_KEY=<your_cartesia_key>
    SKYSCANNER_API_KEY=<your_skyscanner_key>
+   SENDGRID_API_KEY=<your_sendgrid_key>
    ```
 
 5. Run the server:
