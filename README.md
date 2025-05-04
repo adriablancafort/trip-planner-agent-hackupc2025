@@ -1,7 +1,5 @@
 # Team Trip Planner
 
-![Team Trip Planner Banner]()
-
 ## 🧩 The Challenge
 
 Finding the perfect destination for a group of friends living in different locations can be challenging. We've built a smart travel planner that helps groups easily discover ideal destinations based on everyone's preferences, creating a fun, collaborative experience where every member has input in the final decision.
@@ -19,8 +17,9 @@ This project was created for the HackUPC 2025 challenge: **"The Perfect Reunion:
 
 ## 📷 Screenshots
 
-![App Screenshot 1]()
-![App Screenshot 2]()
+![App Screenshot 1](images/start-new-trip.png)
+
+![App Screenshot 2](images/trip-planner-agent.png)
 
 ## 🔧 Tech Stack
 
