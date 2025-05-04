@@ -4,8 +4,8 @@
   "description": "AI-powered trip planner that helps groups find the perfect destination based on everyone's preferences.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#2563EB",
-  "theme_color": "#2563EB",
+  "background_color": "#111111",
+  "theme_color": "#111111",
   "icons": [
     {
       "src": "/icons/icon-192x192.png",
