@@ -6,6 +6,7 @@ const API_SECRET = process.env.LIVEKIT_API_SECRET;
 const LIVEKIT_URL = process.env.LIVEKIT_URL;
 
 export const revalidate = 0;
+export const runtime = 'edge';
 
 export type ConnectionDetails = {
   serverUrl: string;
