@@ -2,3 +2,4 @@ python-dotenv
 pydantic
 livekit-agents[deepgram,openai,cartesia,silero,turn-detector]
 livekit-plugins-noise-cancellation
+amadeus

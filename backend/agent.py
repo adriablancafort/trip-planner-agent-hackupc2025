@@ -1,7 +1,7 @@
 from livekit.agents import Agent, function_tool
-from skyscanner.flights import search_flights
-from skyscanner.hotels import search_hotels
-from skyscanner.events import search_events
+from api.flights import search_flights
+from api.hotels import search_hotels
+from api.events import search_events
 from models import SearchFlightRequest, SearchHotelRequest, SearchEventRequest
 
 

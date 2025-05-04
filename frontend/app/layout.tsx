@@ -9,7 +9,20 @@ const publicSans400 = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Voice Assistant",
+  title: "TripMates - Team Trip Planner",
+  description: "AI-powered trip planner that helps groups find the perfect destination based on everyone's preferences.",
+  manifest: "/manifest.json",
+  themeColor: "#2563EB",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "TripMates"
+  },
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 1,
+  },
 };
 
 export default function RootLayout({
@@ -19,7 +32,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`h-full ${publicSans400.className}`}>
-      <body className="h-full">{children}</body>
+      <head>
+        <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+      </head>
+      <body className="h-full bg-blue-600">{children}</body>
     </html>
   );
 }
