@@ -5,7 +5,6 @@ import os
 import requests
 
 
-
 def get_access_token(client_id, client_secret):
     """
     Obtain an access token from the Amadeus API.
@@ -72,7 +71,7 @@ def search_hotels(params: SearchHotelRequest):
     client_id=os.getenv("AMADEUS_API_KEY")
     client_secret=os.getenv("AMADEUS_API_SECRET")
 
-    hotelIds  = get_hotel_list(client_id, client_secret, params.location)
+    hotelIds  = get_hotel_list(client_id, client_secret, params.locationIata)
     access_token = get_access_token(client_id, client_secret)
 
 
@@ -90,6 +89,6 @@ def search_hotels(params: SearchHotelRequest):
 
     offers_response = requests.get(url, headers=headers, params=params)
     offers_response.raise_for_status()
-    return format_hotel_results(offers_response.json())
-    
-
+    hotels = format_hotel_results(offers_response.json())
+    print(hotels)
+    return hotels

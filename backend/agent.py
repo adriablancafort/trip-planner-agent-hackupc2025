@@ -50,17 +50,19 @@ class TripPlannerAgent(Agent):
         return search_flights(params)
     
     @function_tool()
-    async def search_hotels(self, location: str, month: int, day: int):
+    async def search_hotels(self, locationIata: str, adults: int, month: int, day: int):
         """
         Search for hotels using the Amadeus API.
         
         Args:
-            location: The location for hotel search (e.g., 'Barcelona')
+            locationIata: The city IATA code of the location for hotel search (e.g., 'BCN')
+            adults: The number of adults that will stay in the hotel
             month: The month of travel (e.g., 8 for August)
             day: The day of travel (e.g., 15 for the 15th)
         """
         params = SearchHotelRequest(
-            location=location,
+            locationIata=locationIata,
+            adults=adults,
             year=2025,
             month=month,
             day=day,

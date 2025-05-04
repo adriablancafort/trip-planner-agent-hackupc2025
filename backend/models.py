@@ -13,7 +13,7 @@ class SearchFlightRequest(BaseModel):
 
 class SearchHotelRequest(BaseModel):
     """Parameters for hotel search"""
-    location: str = Field(..., description="City IATA code of the location for hotel search (e.g., 'BCN')")
+    locationIata: str = Field(..., description="City IATA code of the location for hotel search (e.g., 'BCN')")
     adults: int = Field(..., description="Number of adults that will stay in the hotel")
     year: int = Field(..., description="Year of travel")
     month: int = Field(..., description="Month of travel")

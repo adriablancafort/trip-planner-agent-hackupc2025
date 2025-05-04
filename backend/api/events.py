@@ -144,5 +144,6 @@ def search_events(params: SearchEventRequest):
     lines = lines + find_events_amadeus(params.location, params.year,params.month,params.day)
     lines = lines + find_events_ticket_master(params.location, params.year,params.month,params.day)
 
-    return "\n".join(lines)
-    
+    events = "\n".join(lines)
+    print(events)
+    return events
