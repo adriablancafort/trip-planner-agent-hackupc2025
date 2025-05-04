@@ -23,6 +23,8 @@ class TripPlannerAgent(Agent):
             Use the search_events tool to find events.
             Explain the best flight options you find, including prices and airlines.
             The user will provide city names and you will have to use their IATA codes to search for flights.
+            Do not use hashtags in your answers. Without beeing rude, be direct and to the point. 
+            Do not list things, explain them.
             
             After providing flight, hotel, and event recommendations, ask the user if they would like to
             receive all the details by email. If they agree, collect their email address and use the send_email
@@ -103,12 +105,12 @@ class TripPlannerAgent(Agent):
         Args:
             email: The email address to send the information. Make sure to get the correct address from the user.
             subject: The subject of the email
-            content: The content of the email
+            content: The content of the email in HTML format
         """
         params = SendEmail(
             email=email,
             subject=subject,
-            content=content
+            content=content 
         )
         
         return send_email(params)
