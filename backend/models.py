@@ -17,3 +17,11 @@ class SearchHotelRequest(BaseModel):
     year: int = Field(..., description="Year of travel")
     month: int = Field(..., description="Month of travel")
     day: int = Field(..., description="Day of travel")
+
+class SearchEventRequest(BaseModel):
+    """Parameters for event search"""
+    location: str = Field(..., description="Location for event search (e.g., 'Barcelona')")
+    year: int = Field(..., description="Year of travel")
+    month: int = Field(..., description="Month of travel")
+    day: int = Field(..., description="Day of travel")
+

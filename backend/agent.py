@@ -1,7 +1,8 @@
 from livekit.agents import Agent, function_tool
 from skyscanner.flights import search_flights
 from skyscanner.hotels import search_hotels
-from models import SearchFlightRequest, SearchHotelRequest
+from skyscanner.events import search_events
+from models import SearchFlightRequest, SearchHotelRequest, SearchEventRequest
 
 
 class TripPlannerAgent(Agent):
@@ -18,6 +19,7 @@ class TripPlannerAgent(Agent):
             
             Use the search_flights tool to find flight options for them based on their answers.
             Use the search_hotels tool to find hotel options for them based on their answers.
+            Use the search_events tool to find events.
             Explain the best flight options you find, including prices and airlines.
             The user will provide city names and you will have to use their IATA codes to search for flights.
             """
@@ -65,3 +67,22 @@ class TripPlannerAgent(Agent):
         )
         
         return search_hotels(params)
+
+    @function_tool()
+    async def search_events(self, location: str, month: int, day: int):
+        """
+        Search for events using the API.
+        
+        Args:
+            location: The location for event search (e.g., 'Barcelona')
+            month: The month of travel (e.g., 8 for August)
+            day: The day of travel (e.g., 15 for the 15th)
+        """
+        params = SearchEventRequest(
+            location=location,
+            year=2025,
+            month=month,
+            day=day,
+        )
+        
+        return search_events(params)
