@@ -10,3 +10,10 @@ class SearchFlightRequest(BaseModel):
     market: str = Field(default="ES", description="Market country code")
     locale: str = Field(default="es-ES", description="Locale for results")
     currency: str = Field(default="EUR", description="Currency for prices")
+
+class SearchHotelRequest(BaseModel):
+    """Parameters for hotel search"""
+    location: str = Field(..., description="Location for hotel search (e.g., 'Barcelona')")
+    year: int = Field(..., description="Year of travel")
+    month: int = Field(..., description="Month of travel")
+    day: int = Field(..., description="Day of travel")
