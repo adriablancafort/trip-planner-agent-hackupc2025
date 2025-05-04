@@ -1,4 +1,4 @@
-# Team Trip Planner
+# TripMates - Team Trip Planner AI Agent
 
 ## 🧩 The Challenge
 
