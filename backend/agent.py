@@ -96,18 +96,18 @@ class TripPlannerAgent(Agent):
         return search_events(params)
 
     @function_tool()
-    async def send_email(self, email: str, title: str, content: str):
+    async def send_email(self, email: str, subject: str, content: str):
         """
         Send email.
         
         Args:
             email: The email address to send the information. Make sure to get the correct address from the user.
-            title: The title of the email
+            subject: The subject of the email
             content: The content of the email
         """
         params = SendEmail(
             email=email,
-            title=title,
+            subject=subject,
             content=content
         )
         

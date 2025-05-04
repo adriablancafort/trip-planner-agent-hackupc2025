@@ -29,5 +29,5 @@ class SearchEventRequest(BaseModel):
 class SendEmail(BaseModel):
     """Parameters for sending email"""
     email: str = Field(..., description="Email address to send the information")
-    title: str = Field(..., description="Title of the email")
+    subject: str = Field(..., description="Subject of the email")
     content: str = Field(..., description="Content of the email")
