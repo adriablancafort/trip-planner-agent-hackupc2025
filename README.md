@@ -8,6 +8,10 @@ Finding the perfect destination for a group of friends living in different locat
 
 This project was created for the HackUPC 2025 challenge: **"The Perfect Reunion: Finding the Best Destination for Friends Around the World"**, by SkyScanner.
 
+## 🎬 Demo Video
+
+[![Watch the demo video](https://img.youtube.com/vi/xspPeSBnUK8/maxresdefault.jpg)](https://www.youtube.com/watch?v=xspPeSBnUK8)
+
 ## ✨ Features
 
 - **Real-time Voice Interaction**: Talk to our AI trip planner through an interactive interface
@@ -40,10 +44,6 @@ The core of TripMates is an intelligent agent (`gpt-4o-mini`) that acts as the o
 - **Email Integration (SendGrid)**: Sends a detailed trip summary directly to the user’s email after the planning session.
 
 This modular tool-based design makes the agent both flexible and extensible.
-
-## 🎬 Demo Video
-
-Watch our application in action: [View Demo Video](https://www.loom.com/share/3f753365088a45949277f68ff1309cd1?sid=57500c0a-eac2-4949-9a12-ec420423315c)
 
 ## 🔧 Tech Stack
 
