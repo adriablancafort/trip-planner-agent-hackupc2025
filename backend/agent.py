@@ -1,8 +1,8 @@
 from livekit.agents import Agent, function_tool
-from api.flights import search_flights
-from api.hotels import search_hotels
-from api.events import search_events
-from api.emails import send_email
+from tools.flights import search_flights
+from tools.hotels import search_hotels
+from tools.events import search_events
+from tools.emails import send_email
 from models import SearchFlightRequest, SearchHotelRequest, SearchEventRequest, SendEmail
 
 
